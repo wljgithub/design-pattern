@@ -4,19 +4,15 @@ type nike struct {
 }
 
 func (n *nike) makeShoe() iShoe {
-	return &nikeShoe{
-		shoe: shoe{
-			logo: "nike",
-			size: 14,
-		},
-	}
+	shoe:= &nikeShoe{}
+	shoe.setLogo("nike")
+	shoe.setSize(24)
+	return shoe
 }
 
 func (n *nike) makeShort() iShort {
-	return &nikeShort{
-		short: short{
-			logo: "nike",
-			size: 14,
-		},
-	}
+	short:=&nikeShort{}
+	short.setLogo("nike")
+	short.setSize(24)
+	return short
 }

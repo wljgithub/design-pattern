@@ -3,20 +3,16 @@ package main
 type adidas struct {
 }
 
-func (a *adidas) makeShoe() iShoe {
-	return &adidasShoe{
-		shoe: shoe{
-			logo: "adidas",
-			size: 14,
-		},
-	}
+func (this *adidas) makeShoe() iShoe {
+	shoe := &adidasShoe{}
+	shoe.setLogo("adidas")
+	shoe.setSize(24)
+	return shoe
 }
 
-func (a *adidas) makeShort() iShort {
-	return &adidasShort{
-		short: short{
-			logo: "adidas",
-			size: 14,
-		},
-	}
+func (this *adidas) makeShort() iShort {
+	short := &adidasShort{}
+	short.setLogo("adidas")
+	short.setSize(24)
+	return short
 }

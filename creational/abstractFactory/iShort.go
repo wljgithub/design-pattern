@@ -12,18 +12,18 @@ type short struct {
 	size int
 }
 
-func (s *short) setLogo(logo string) {
-	s.logo = logo
+func (this *short) setLogo(logo string) {
+	this.logo = logo
 }
 
-func (s *short) getLogo() string {
-	return s.logo
+func (this *short) setSize(size int) {
+	this.size = size
 }
 
-func (s *short) setSize(size int) {
-	s.size = size
+func (this *short) getLogo() string {
+	return this.logo
 }
 
-func (s *short) getSize() int {
-	return s.size
+func (this *short) getSize() int {
+	return this.size
 }

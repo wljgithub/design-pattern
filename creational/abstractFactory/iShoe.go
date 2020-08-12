@@ -6,24 +6,23 @@ type iShoe interface {
 	getLogo() string
 	getSize() int
 }
-
 type shoe struct {
 	logo string
 	size int
 }
 
-func (s *shoe) setLogo(logo string) {
-	s.logo = logo
+func (this *shoe) setLogo(logo string) {
+	this.logo = logo
 }
 
-func (s *shoe) getLogo() string {
-	return s.logo
+func (this *shoe) setSize(size int) {
+	this.size = size
 }
 
-func (s *shoe) setSize(size int) {
-	s.size = size
+func (this *shoe) getLogo() string {
+	return this.logo
 }
 
-func (s *shoe) getSize() int {
-	return s.size
+func (this *shoe) getSize() int {
+	return this.size
 }
