@@ -1,6 +1,6 @@
 package main
 
-type originator struct {
+type  originator struct {
 	state string
 }
 
